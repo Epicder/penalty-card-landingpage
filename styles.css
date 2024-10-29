@@ -3,8 +3,50 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #0cc349;
 }
+
+nav {
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(7px); /* Blur effect */
+    padding: 10px 20px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+    z-index: 1000; /* Ensure the nav stays on top */
+    justify-content: space-between;
+}
+
+.logo h4 {
+    margin: 0;
+    color: #eaeaea;
+}
+
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin-left: -50px;
+}
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #eaeaea;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #0ba73f; /* Optional: change color on hover */
+}
+
 header {
     text-align: center;
     color: white;
@@ -13,46 +55,83 @@ header {
     justify-content: center;
     height: 100vh;
     font-size: 2.5rem;
+    position: relative;
 }
+
+.title {
+    font-family: 'Speedway', sans-serif;
+    font-size: 3.1rem;
+    letter-spacing: 5px;
+    color: #0BD34E;
+    text-shadow: 10px 5px 0 rgb(1, 33, 20);
+}
+
 .hero {
-    background-image: url('/assets/main_image.jpg'); /* Cambia esta URL por la de tu imagen */
+    background-image: url("https://wallpapers.com/images/hd/1920x1080-aesthetic-glrfk0ntspz3tvxg.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Efecto parallax */
     position: relative;
     text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.wave svg {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
     padding: 20px;
 }
-.cta {
-    background: #fff;
+
+.text-about {   
+    width: 50%;
+    height: 40%;
     padding: 30px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    text-align: left;
+    font-family: 'Sport', 'sans-serif';
     margin-top: 20px;
+    color: rgb(243, 242, 242);
 }
-.cta h2 {
+
+.text-about h2 {
     margin: 0 0 20px;
+    font-size: 4.1rem;
 }
-.cta p {
+
+.text-about p {
     margin: 0 0 20px;
+    font-size: 1.8rem;
 }
+
 .cta button {
-    background: #28A745;
+    background: #228c3b;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
 }
+
 .cta button:hover {
     background: #218838;
 }
+
 footer {
     text-align: center;
     padding: 20px 0;
@@ -69,10 +148,26 @@ footer {
         width: 100%;
         padding: 10px;
     }
+
     .cta {
         padding: 20px;
     }
+
     header {
         font-size: 2rem;
     }
+}
+
+@font-face {
+    font-family: 'Speedway';
+    src: url('fonts/Speedway.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sport';
+    src: url('fonts/SPORTVIPER.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
