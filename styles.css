@@ -18,7 +18,6 @@ nav {
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     justify-content: space-between;
-
 }
 
 .logo h4 {
@@ -30,7 +29,6 @@ nav {
     text-shadow: 7px 3px 0 rgb(1, 33, 20);
 }
 
-
 .nav-links {
     list-style: none;
     padding-right: 50px;
@@ -38,6 +36,7 @@ nav {
     gap: 15px;
     font-family: 'Articons', 'sans-serif';
 }
+
 .nav-links li {
     display: inline;
 }
@@ -65,7 +64,7 @@ header {
 
 .title {
     font-family: 'Speedway', sans-serif;
-    font-size: 3.2rem;
+    font-size: 3.1rem;
     letter-spacing: 5px;
     color: #0BD34E;
     text-shadow: 10px 5px 0 rgb(1, 33, 20);
@@ -167,6 +166,7 @@ header {
     text-align: center;
     font-family: 'Sport', 'sans-serif';
 }
+
 .team-section p {
     font-size: 1.1rem;
     color: rgb(243, 242, 242);
@@ -216,7 +216,7 @@ header {
     transform: rotateY(180deg);
 }
 
-.github img{
+.github img {
     width: 30px;
     height: auto;
     padding: 5px;
@@ -228,7 +228,7 @@ header {
     z-index: 1001;
 }
 
-.gmail img{
+.gmail img {
     width: 30px;
     height: auto;
     padding: 5px;
@@ -312,19 +312,122 @@ footer {
 }
 
 /* Responsivo */
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 10px;
+@media (max-width: 1200px) {
+    .nav-links {
+        padding-right: 20px;
+        gap: 10px;
     }
 
-    header {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .text-about {
+        width: 50%;
+    }
+
+    .text-about h2 {
+        font-size: 3rem;
+    }
+
+    .text-about p {
+        font-size: 1.1rem;
+    }
+
+    .team-section h2 {
+        font-size: 2rem;
+    }
+
+    .play-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        padding-right: 0;
+        gap: 5px;
+    }
+
+    .title {
         font-size: 2rem;
     }
 
     .text-about {
-        width: 80%;
+        width: 70%;
+    }
+
+    .text-about h2 {
+        font-size: 2.5rem;
+    }
+
+    .text-about p {
+        font-size: 1rem;
+    }
+
+    .team-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .play-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        width: 150px;
+        height: 225px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    nav {
+        padding: 10px 10px;
+        width: 100%;
+        height: 10%;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        padding-right: 40px;
+
+        gap: 5px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 50%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text-about {
+        width: 90%;
         padding: 10px;
+    }
+
+    .text-about h2 {
+        font-size: 2rem;
+    }
+
+    .text-about p {
+        font-size: 0.9rem;
+    }
+
+    .team-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .play-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        width: 120px;
+        height: 180px;
     }
 }
 
