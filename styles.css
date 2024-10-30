@@ -346,7 +346,7 @@ footer {
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
-        padding-right: 0;
+        padding-right: 40px;
         gap: 5px;
     }
 
@@ -383,14 +383,18 @@ footer {
 @media (max-width: 480px) {
 
     nav {
-        padding: 10px 10px;
+        padding: 5px 10px;
         width: 100%;
         height: 10%;
     }
     
     .nav-links {
-        flex-direction: column;
+        position: relative;
+        display: flex;
+        top: 10px;
+        justify-content: end;
         padding-right: 40px;
+        flex-direction: column;
 
         gap: 5px;
     }
@@ -402,6 +406,7 @@ footer {
 
     .title {
         font-size: 2rem;
+        letter-spacing: 0.8rem;
     }
 
     .text-about {
@@ -418,11 +423,11 @@ footer {
     }
 
     .team-section h2 {
-        font-size: 1.2rem;
+        font-size: 2.5rem;
     }
 
     .play-section h2 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     .card {
