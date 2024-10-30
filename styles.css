@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0cc349;
+    background-color: #09ac3f;
 }
 
 nav {
@@ -60,14 +60,14 @@ header {
 
 .title {
     font-family: 'Speedway', sans-serif;
-    font-size: 3.1rem;
+    font-size: 3.2rem;
     letter-spacing: 5px;
     color: #0BD34E;
     text-shadow: 10px 5px 0 rgb(1, 33, 20);
 }
 
 .hero {
-    background-image: url("https://wallpapers.com/images/hd/1920x1080-aesthetic-glrfk0ntspz3tvxg.jpg");
+    background-image: url("assets/main_screen.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Efecto parallax */
@@ -90,6 +90,7 @@ header {
     display: block;
     width: 100%;
     height: 100px;
+    margin-bottom: -5px;
 }
 
 .container {
@@ -100,7 +101,7 @@ header {
 }
 
 .text-about {   
-    width: 50%;
+    width: 30%;
     height: 40%;
     padding: 30px;
     text-align: left;
@@ -115,21 +116,184 @@ header {
 }
 
 .text-about p {
+    padding-left: 20px;
     margin: 0 0 20px;
-    font-size: 1.8rem;
+    font-family: 'Articons', 'sans-serif';
+    font-size: 1.3rem;
 }
 
-.cta button {
-    background: #228c3b;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+.custom-shape-divider-bottom-1730233370 {
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.cta button:hover {
-    background: #218838;
+.custom-shape-divider-bottom-1730233370 svg {
+    display: absolute;
+    width: 100%;
+    height: 100px;
+    margin-bottom: -10px;
+}
+
+.custom-shape-divider-bottom-1730233370 .shape-fill {
+    fill: #068330;
+}
+
+.team-section {
+    width: 100%;
+    height: 100%;
+    background-color: #068330;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    color: rgb(243, 242, 242);
+    background-color: #068330;
+    text-align: center;
+    font-family: 'Sport', 'sans-serif';
+}
+.team-section p {
+    font-size: 1.1rem;
+    color: rgb(243, 242, 242);
+    background-color: #068330;
+    text-align: center;
+    font-family: 'Articons', 'sans-serif';
+}
+
+.team-member {
+    perspective: 1000px;
+    margin: 10px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.back img {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 90%;
+    height: auto;
+}
+
+.flipped .card {
+    transform: rotateY(180deg);
+}
+
+.github img{
+    width: 30px;
+    height: auto;
+    padding: 5px;
+    z-index: 1001;
+}
+
+.github {
+    display: flex;
+    z-index: 1001;
+}
+
+.gmail img{
+    width: 30px;
+    height: auto;
+    padding: 5px;
+    z-index: 1001;
+}
+
+.gmail {
+    display: flex;
+    z-index: 1001;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    z-index: 1001;
+}
+
+.custom-shape-divider-bottom-1730249775 {
+    position: relative;
+    bottom: 100px;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1730249775 svg {
+    display: absolute;
+    width: 100%;
+    height: 100px;
+    margin-bottom: -10px;
+}
+
+.custom-shape-divider-bottom-1730249775 .shape-fill {
+    fill: #09AC3F;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.download-buttons img {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+.play-section {
+    width: 100%;
+    height: 100%;
+    background-color: #09ac3f;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+.play-section h2 {
+    font-size: 2.5rem;
+    color: rgb(243, 242, 242);
+    text-align: center;
+    font-family: 'Sport', 'sans-serif';
+}
+
+.play-section p {
+    font-size: 1.1rem;
+    color: rgb(243, 242, 242);
+    text-align: center;
+    font-family: 'Articons', 'sans-serif';
 }
 
 footer {
@@ -149,12 +313,13 @@ footer {
         padding: 10px;
     }
 
-    .cta {
-        padding: 20px;
-    }
-
     header {
         font-size: 2rem;
+    }
+
+    .text-about {
+        width: 80%;
+        padding: 10px;
     }
 }
 
@@ -168,6 +333,13 @@ footer {
 @font-face {
     font-family: 'Sport';
     src: url('fonts/SPORTVIPER.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Articons';
+    src: url('fonts/ArcticonsSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
