@@ -3,7 +3,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #09ac3f;
+    background-color: #06822f;
+}
+
+strong {
+    font-weight: 800;
 }
 
 nav {
@@ -22,11 +26,11 @@ nav {
 
 .logo h4 {
     margin: 0;
-    color: #0BD34E;
+    color: #e0f001;
+    text-shadow: 10px 5px 0 rgb(0, 0, 0);
     font-family: 'Speedway', sans-serif;
     text-align: center;
     letter-spacing: 3.3px;
-    text-shadow: 7px 3px 0 rgb(1, 33, 20);
 }
 
 .nav-links {
@@ -66,8 +70,8 @@ header {
     font-family: 'Speedway', sans-serif;
     font-size: 3.1rem;
     letter-spacing: 5px;
-    color: #0BD34E;
-    text-shadow: 10px 5px 0 rgb(1, 33, 20);
+    color: #e0f001;
+    text-shadow: 10px 5px 0 rgb(0, 0, 0);
 }
 
 .hero {
@@ -98,7 +102,6 @@ header {
 }
 
 .container {
-    margin: auto;
     overflow: hidden;
     padding: 20px;
 }
@@ -110,23 +113,26 @@ header {
     text-align: left;
     font-family: 'Sport', 'sans-serif';
     margin-top: 20px;
-    color: rgb(243, 242, 242);
+    color: rgb(234, 232, 232);
 }
 
 .text-about h2 {
     margin: 0 0 20px;
-    font-size: 4.1rem;
+    font-size: 4.5rem;
+    color: rgb(234, 232, 232);
 }
 
 .text-about p {
     padding-left: 20px;
     margin: 0 0 20px;
     font-family: 'Articons', 'sans-serif';
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    color: rgb(234, 232, 232);
 }
 
 .carousel {
     position: relative;
+    right: 100px;
     max-width: 40%;
     margin: auto;
     overflow: hidden;
@@ -183,13 +189,13 @@ header {
 }
 
 .custom-shape-divider-bottom-1730233370 .shape-fill {
-    fill: #068330;
+    fill: #115e2a;
 }
 
 .team-section {
     width: 100%;
     height: 100%;
-    background-color: #068330;
+    background-color: #115e2a;
     margin-bottom: 20px;
     margin-top: -30px;
 }
@@ -199,13 +205,12 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 110px;
 }
 
 .team-section h2 {
     font-size: 2.5rem;
     color: rgb(243, 242, 242);
-    background-color: #068330;
     text-align: center;
     font-family: 'Sport', 'sans-serif';
 }
@@ -213,7 +218,6 @@ header {
 .team-section p {
     font-size: 1.1rem;
     color: rgb(243, 242, 242);
-    background-color: #068330;
     text-align: center;
     font-family: 'Articons', 'sans-serif';
 }
@@ -224,8 +228,8 @@ header {
 }
 
 .card {
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     position: relative;
@@ -306,7 +310,7 @@ header {
 }
 
 .custom-shape-divider-bottom-1730249775 .shape-fill {
-    fill: #09AC3F;
+    fill: #06822f;
 }
 
 .download-buttons {
@@ -325,13 +329,12 @@ header {
 .play-section {
     width: 100%;
     height: 100%;
-    background-color: #09ac3f;
-    margin-bottom: 20px;
-    margin-top: -30px;
+    background-color: #06822f;
+
 }
 
 .play-section h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: rgb(243, 242, 242);
     text-align: center;
     font-family: 'Sport', 'sans-serif';
@@ -460,7 +463,7 @@ footer {
     }
 
     .text-about h2 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .text-about p {
@@ -474,6 +477,7 @@ footer {
 
     .carousel {
         max-width: 100%;
+        left: 1px;
         height: auto;
         margin-top: 20px;
     }
