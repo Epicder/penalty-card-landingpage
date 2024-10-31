@@ -436,6 +436,14 @@ footer {
         width: 120px;
         height: 180px;
     }
+    
+    .back img {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 90%;
+    height: auto;
+    }
 }
 
 @font-face {
