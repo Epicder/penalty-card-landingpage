@@ -406,7 +406,9 @@ footer {
 
     .title {
         font-size: 2rem;
-        letter-spacing: 0.8rem;
+        letter-spacing: 0.5rem;
+        line-height: 3.2rem;
+        text-shadow: 7px 3px 0 rgb(1, 33, 20);
     }
 
     .text-about {
