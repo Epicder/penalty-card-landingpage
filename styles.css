@@ -27,7 +27,7 @@ nav {
 .logo h4 {
     margin: 0;
     color: #e0f001;
-    text-shadow: 10px 5px 0 rgb(0, 0, 0);
+    text-shadow: 3px 3px 0 rgb(0, 0, 0);
     font-family: 'Speedway', sans-serif;
     text-align: center;
     letter-spacing: 3.3px;
@@ -448,13 +448,13 @@ footer {
     .nav-links {
         position: relative;
         display: flex;
-        top: 10px;
+        top: 20px;
         justify-content: end;
         padding-right: 40px;
         flex-direction: column;
-
         gap: 5px;
     }
+
 
     .hero {
         height: auto;
@@ -509,8 +509,14 @@ footer {
         font-size: 2.5rem;
     }
 
+    .team-section p {
+        font-size: 1.4rem;
+        padding: 10px;
+        text-align: center;
+    }
+
     .play-section h2 {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
 
     .card {
